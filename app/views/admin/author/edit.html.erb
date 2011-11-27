@@ -1,0 +1,9 @@
+<%= form_for [:admin, @author] do |form| %>
+    <%= render :partial => 'form', :object => form %>
+    <%= form.submit 'Edit' %>
+<% end %>
+
+<p>
+  <%= link_to 'Show', :action => 'show', :id => @author %> |
+  <%= link_to 'Back', :action => 'index' %>
+</p>

@@ -1,0 +1,11 @@
+<h1>Listing authors</h1>
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  <%= render :partial => 'author', :collection => @authors %>
+</table>
+
+<p><%= link_to 'New', new_admin_author_path %> </p>

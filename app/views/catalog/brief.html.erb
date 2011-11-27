@@ -1,0 +1,16 @@
+<h1>Catalog#latest</h1>
+<table>
+  <tr>
+    <td>
+      <dl>
+        <dt>Cover image</dt>
+        <dd><%= image_tag url_for_file_column(@books.first, :cover_image) %></dd>
+      </dl>
+    </td>
+    <td><%= will_paginate @books %></td>
+  </tr>
+  <tr>
+    <td><%= image_tag @img_path.to_s %></td>
+    <td><p>the <%= @index %> in <%= @count %></p></td>
+  </tr>
+</table>

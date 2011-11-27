@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> <%= @page_title || 'Emporium' %></title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<% if flash[:notice] %>
+    <div id="notice">
+      <%= flash[:notice] %>
+    </div>
+<% end %>
+
+<% if @page_title %>
+<h1><%= "#{@page_title}" %></h1>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>

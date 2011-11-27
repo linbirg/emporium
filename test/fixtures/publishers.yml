@@ -1,0 +1,8 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+apress:
+  id: 1
+  name: Apress
+emporium:
+  id: 2
+  name: Emporium
